@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Nocalt RP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Nocalt<span class="highlight">RP</span></div>
+            <!-- Adding hamburger menu for mobile -->
+            <div class="hamburger" id="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="https://discord.gg/baQYqeXu83" target="_blank" class="active">Loja</a></li>
+                <li><a href="#" class="discord-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                    </svg>
+                    Discord
+                </a></li>
+                <li><a href="login.html" class="btn-primary">Área do Cliente</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>🛒 Loja de Produtos</h1>
+            <p>Adquira VIP, moedas e itens exclusivos para melhorar sua experiência no servidor</p>
+        </div>
+    </div>
+
+    <main class="store-page">
+        <div class="container">
+            <div class="store-categories">
+                <button class="category-btn active" data-category="vip">VIP</button>
+                <button class="category-btn" data-category="coins">Diamantes</button>
+                <button class="category-btn" data-category="vehicles">Veículos</button>
+                <button class="category-btn" data-category="items">Acessórios</button>
+            </div>
+
+            <div class="products-grid" id="products-container">
+                <!-- VIP Products -->
+                <div class="product-card" data-category="vip">
+                    <div class="product-badge popular">Popular</div>
+                    <div class="product-header vip-bronze">
+                        <h3>Socio Nocalt</h3>
+                        <div class="product-icon"></div>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-price">
+                            <span class="price">R$ 15,00</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>✓ 5 Diamantes</li>
+                            <li>✓ 15K no Banco</li>
+                            <li>✓ 2 levels + 10 respeitos</li>
+                            <li>✓ 1 Veículo rc Temporário (5 dias)</li>
+                            <li>✓ Comandos e benefícios no jogo</li>
+                            <li>✓ Mais Espaços para comprar casas</li>
+                            <li>✓ Mais Espaços para comprar Fazendas</li>
+                            <li>✓ contato direito com a administração</li>
+                        </ul>
+                        <button class="btn btn-buy" onclick="buyProduct('VIP Bronze', 15.00)">Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vip">
+                    <div class="product-badge best">Melhor Valor</div>
+                    <div class="product-header vip-silver">
+                        <h3>Scio Premium</h3>
+                        <div class="product-icon"></div>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-price">
+                            <span class="price">R$ 25,00</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>✓ 15 Diamantes</li>
+                            <li>✓ 25K no Banco</li>
+                            <li>✓ 5 levels + 15 respeitos</li>
+                            <li>✓ 2 Veículo rc Temporário (15 dias)</li>
+                            <li>✓ Comandos e benefícios no jogo</li>
+                            <li>✓ Mais Espaços para comprar casas</li>
+                            <li>✓ Mais Espaços para comprar Fazendas</li>
+                            <li>✓ contato direito com a administração</li>
+                        </ul>
+                        <button class="btn btn-buy" onclick="buyProduct('Socio Premium', 25.00)">Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="product-card featured" data-category="vip">
+                    <div class="product-badge premium">Premium</div>
+                    <div class="product-header vip-gold">
+                        <h3>Vip Supremo</h3>
+                        <div class="product-icon"></div>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-price">
+                            <span class="price">R$ 35,00</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>✓ 25 Diamantes</li>
+                            <li>✓ 35K no Banco</li>
+                            <li>✓ 7 levels + 15 respeitos</li>
+                            <li>✓ 1 Veículo rc (Permanente)</li>
+                            <li>✓ 1 ACC (Permanente)</li>
+                            <li>✓ Comandos e benefícios no jogo</li>
+                            <li>✓ Mais Espaços para comprar casas</li>
+                            <li>✓ Mais Espaços para comprar Fazendas</li>
+                            <li>✓ contato direito com a administração</li>
+                        </ul>
+                        <button class="btn btn-buy" onclick="buyProduct('VIP Supremo', 35.00)">Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="product-card featured" data-category="vip">
+                    <div class="product-badge premium">Premium</div>
+                    <div class="product-header vip-gold">
+                        <h3>Vip Lendário</h3>
+                        <div class="product-icon"></div>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-price">
+                            <span class="price">R$ 45,00</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>✓ 25 Diamantes</li>
+                            <li>✓ 45K no Banco</li>
+                            <li>✓ 9 levels + 20 respeitos</li>
+                            <li>✓ 2 Veículo rc (Permanente)</li>
+                            <li>✓ 2 ACC (Permanente)</li>
+                            <li>✓ Comandos e benefícios no jogo</li>
+                            <li>✓ Mais Espaços para comprar casas</li>
+                            <li>✓ Mais Espaços para comprar Fazendas</li>
+                            <li>✓ contato direito com a administração</li>
+                        </ul>
+                        <button class="btn btn-buy" onclick="buyProduct('VIP Lendário', 45.00)">Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="product-card featured" data-category="vip">
+                    <div class="product-badge premium">Premium</div>
+                    <div class="product-header vip-gold">
+                        <h3>Patrocinador</h3>
+                        <div class="product-icon"></div>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-price">
+                            <span class="price">R$ 100,00</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>✓ 120 Diamantes</li>
+                            <li>✓ 150K no Banco</li>
+                            <li>✓ 15 levels + 25 respeitos</li>
+                            <li>✓ 5 Veículo rc (Permanente)</li>
+                            <li>✓ 5 ACC (Permanente)</li>
+                            <li>✓ Comandos e benefícios no jogo</li>
+                            <li>✓ Mais Espaços para comprar casas</li>
+                            <li>✓ Mais Espaços para comprar Fazendas</li>
+                            <li>✓ contato direito com a administração</li>
+                        </ul>
+                        <button class="btn btn-buy" onclick="buyProduct('Patrocinador', 100.00)">Comprar Agora</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="coins" style="display: none;">
+                    <div class="product-header coins">
+                        <h3>Diamantes</h3>
+                        <div class="product-icon">💎</div>
+                    </div>
+                    <div class="product-body">
+                        <div class="product-price">
+                            <span class="price">R$ 1,00</span>
+                        </div>
+                        <p class="product-description">Diamantes são a Moeda do Servidor onde Voçê pode comprar VIPS, ACC e Veiculos de Inventario </p>
+                        <button class="btn btn-buy" onclick="buyProduct('Diamantes', 1.00)">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nocalt<span class="highlight">RP</span></h3>
+                    <p>O melhor servidor de roleplay do Brasil.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="loja.html">Loja</a></li>
+                        <li><a href="login.html">Área do Cliente</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Comunidade</h4>
+                    <ul>
+                        <li><a href="https://discord.gg/baQYqeXu83" target="_blank">Discord</a></li>
+                        <li><a href="#">Fórum</a></li>
+                        <li><a href="regras.html">Regras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Denúncias</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nocalt RP. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
